@@ -52,6 +52,8 @@ button_minus=tk.Button(root,text="-",command=lambda:input("-"),height=1,width=5,
 button_minus.grid(row=4,column=2)
 button_result=tk.Button(root,text="=",command=lambda:calc(),height=1,width=5,font=("Arial",18))
 button_result.grid(row=5,column=0)
+button_result=tk.Button(root,text=".",command=lambda:input("."),height=1,width=5,font=("Arial",18))
+button_result.grid(row=6,column=0)
 
 button_divide=tk.Button(root,text="/",command=lambda:input("/"),height=1,width=5,font=("Arial",18))
 button_divide.grid(row=5,column=1)
@@ -61,4 +63,3 @@ button_result=tk.Button(root,text="clear",command=lambda:clear(),height=1,width=
 button_result.grid(row=6,column=1)
 
 root.mainloop()
-
